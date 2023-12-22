@@ -1,3 +1,5 @@
+@import url(./header.css);
+
 :root{
     --background-light:#fff;
     --background-dark: #202024;
@@ -17,5 +19,18 @@ body{
 }
 
 .container{
-    padding-inline: 20px;
+    max-width: 428px;
 }
+
+.ukraine-logo {
+    filter: brightness(0) invert(1);
+}
+@media screen and (min-width: 767px) {
+    .container{
+            max-width: 768px;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+.container {
+    max-width: 1158px;}}
