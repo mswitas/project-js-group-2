@@ -2,6 +2,7 @@ import { insertCategoryList } from "./js/insert-data/insert-category-list";
 import { insertTopBooks } from "./js/insert-data/insert-top-books";
 import { insertCategory } from "./js/insert-data/insert-category";
 import { insertBook } from "./js/insert-data/insert-book";
+import './css/scss/main.scss'
 
 insertCategoryList();
 insertTopBooks();
