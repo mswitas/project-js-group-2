@@ -15,9 +15,9 @@
 
 <body>
     <include src="./partials/header.html"></include>
-
-    <h2>Shopping <span>List</span></h2>
-    <div id="placeholder">
+    <div class="container"></div>
+    <h2 id="SL-title">Shopping <span id="SL-title-span">List</span></h2>
+    <div id="SL-placeholder">
         <p>This page is empty, add some books and proceed to order.</p>
         <img src="/src/images/book-shopping-list.png" alt="falling books">
     </div>
@@ -44,24 +44,23 @@
                 </div>
                 <button type="button">
                     <svg class="SL-remove" width="32" height="32">
-                        <!-- <use href="/icons.svg#icon-trash-03"></use> -->
+                        <use href="./images/icons.svg#icon-trash-03"></use>
                     </svg>
                 </button>
             </li>
         </ul>
-
-        <div id="SL-pages">
-            <button type="burtton" id="SL-pages-first">first</button>
-            <button type="burtton" id="SL-pages-previous">previous</button>
-            <button type="burtton" id="SL-pages-actual">actual</button>
-            <button type="burtton" id="SL-pages-after">after</button>
-            <button type="burtton" id="SL-pages-chose">chose</button>
-            <button type="burtton" id="SL-pages-next">next</button>
-            <button type="burtton" id="SL-pages-last">last</button>
-        </div>
     </div>
-
-    <script src="./index.js" type="module"></script>
+    <div id="SL-pages">
+        <button type="burtton" id="SL-pages-first">first</button>
+        <button type="burtton" id="SL-pages-previous">previous</button>
+        <button type="burtton" id="SL-pages-actual">actual</button>
+        <button type="burtton" id="SL-pages-after">after</button>
+        <button type="burtton" id="SL-pages-chose">chose</button>
+        <button type="burtton" id="SL-pages-next">next</button>
+        <button type="burtton" id="SL-pages-last">last</button>
+    </div>
+    </div>
+    <!-- <script src="./index.js" type="module"></script> -->
 
 </body>
 

@@ -1,26 +1,31 @@
 header {
-display: block;    height: 64px;
+    display: block;
+    height: 64px;
     border-radius: 0px 0px 8px 8px;
     border: 1.5px solid #111;
     background: #fff;
     margin: auto;
     padding: 18px 20px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     display: none;
     list-style: none;
 }
+
 #sign-button {
-    display:none;
+    display: none;
 }
 
-.nav-wrapper{
+.nav-wrapper {
     display: flex;
-    margin-left:0;
+    margin-left: 0;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -126,27 +131,31 @@ input:checked+.slider:before {
     line-height: 18px;
     letter-spacing: -0.56px;
 }
-.flex{
+
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.btns-header-wrapper{
+.btns-header-wrapper {
     display: flex;
     align-items: center;
     gap: 14px;
 }
+
 @media screen and (min-width: 767px) {
     .header-list {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
+
     #sign-button {
         display: flex;
     }
-    .hamburger{
+
+    .hamburger {
         display: none;
     }
 }
