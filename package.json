@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky install",
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url project-js-group-2",
+    "build": "parcel build src/*.html --public-url ./",
     "build:local": "parcel build src/*.html"
   },
   "repository": {
@@ -33,5 +33,9 @@
   "dependencies": {
     "axios": "^1.6.2",
     "notiflix": "^3.2.6"
+  },
+  "default": "dist\\index.html",
+  "targets": {
+    "default": {}
   }
 }
