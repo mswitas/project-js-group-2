@@ -1,0 +1,49 @@
+#sidebar {
+  background-color: lightblue;
+  width: 356px;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #menu-categories {
+    .categories-title {
+      color: #4f2ee8;
+      font-family: DM Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 133.333% */
+      letter-spacing: -0.36px;
+      text-transform: uppercase;
+    }
+    h3,
+    li {
+      margin-bottom: 2rem;
+    }
+  }
+
+  #ukraine-support {
+    // To be removed
+    height: 474px;
+    width: 356px;
+
+    border-radius: 16px;
+    background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
+    box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.1);
+    padding: 26px 40px;
+
+    .support-ukraine-title {
+      margin-bottom: 40px;
+    }
+
+    .support-ukraine-list {
+      li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
