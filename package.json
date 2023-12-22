@@ -4,6 +4,7 @@
   "description": "",
   "homepage": "https://mswitas.github.io/project-js-group-2/",
   "scripts": {
+    "prepare": "husky install",
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url project-js-group-2",
     "build:local": "parcel build src/*.html"
@@ -12,6 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/mswitas/project-js-group-2"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build:local"
+    }
+  },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
@@ -19,10 +25,15 @@
     "url": "https://github.com/mswitas/project-js-group-2/issues"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "buffer": "^6.0.3",
+    "husky": "^8.0.3",
+    "parcel": "^2.8.3",
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
+    "axios": "^1.6.2",
+    "notiflix": "^3.2.6",
     "parcel": "^2.10.3",
     "sass": "^1.69.5"
   }
