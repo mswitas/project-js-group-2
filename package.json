@@ -4,12 +4,18 @@
   "description": "",
   "homepage": "https://mswitas.github.io/project-js-group-2/",
   "scripts": {
+    "prepare": "husky install",
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url project-js-group-2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mswitas/project-js-group-2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build:local"
+    }
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
@@ -19,6 +25,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
+    "husky": "^8.0.3",
     "parcel": "^2.8.3",
     "posthtml-include": "^1.7.4"
   },
