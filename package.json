@@ -36,7 +36,6 @@
     "axios": "^1.6.2",
     "notiflix": "^3.2.6"
   },
-  "default": "dist\\index.html",
   "targets": {
     "default": {}
   }
