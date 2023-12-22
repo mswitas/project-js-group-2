@@ -6,8 +6,7 @@
   "scripts": {
     "prepare": "husky install",
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url project-js-group-2",
-    "build:local": "parcel build src/*.html"
+    "build": "parcel build src/*.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -26,12 +25,19 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
+    "buffer": "^6.0.3",
     "husky": "^8.0.3",
     "parcel": "^2.8.3",
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
+    "parcel": "^2.10.3",
+    "sass": "^1.69.5",
     "axios": "^1.6.2",
     "notiflix": "^3.2.6"
+  },
+  "default": "dist\\index.html",
+  "targets": {
+    "default": {}
   }
 }
