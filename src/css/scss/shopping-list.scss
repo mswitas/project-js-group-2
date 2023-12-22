@@ -1,1 +1,26 @@
- 
+#SL-container {
+  max-width: 428px;
+  margin: 40px 20px;
+
+  #SL-support {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #SL-container {
+    max-width: 768px;
+    margin: 40px 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #SL-container {
+    max-width: 1158px;
+    margin: 40px 24px;
+
+    #SL-support {
+      display: flex;
+    }
+  }
+}

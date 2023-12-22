@@ -12,7 +12,8 @@ a {
     text-decoration: none;
 }
 
-ul {
+/* oryginalnie było tylko ul */
+header ul {
     display: none;
     list-style: none;
 }
