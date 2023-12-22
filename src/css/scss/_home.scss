@@ -1,0 +1,10 @@
+#home{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    padding: 40px 24px;
+    
+    >* {
+        flex-shrink: 0;
+    }
+}
