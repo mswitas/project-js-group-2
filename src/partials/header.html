@@ -1,37 +1,53 @@
 <header>
-  <div class="container flex">
-    <nav class="nav-wrapper">
-      <a href="/" class="logo">
-        <svg class="logo-icon"><use href="/src/images/icons.svg#icon-logo"></use></svg
-        ><svg class="logo-text"><use href="/src//images/icons.svg#icon-bookshelf-logo"></use></svg>
+  <div class="container header-flex header-padding">
+    <nav class="header-nav-wrapper">
+      <a href="/" class="header-logo">
+        <svg class="header-logo-icon"><use href="/src/images/icons.svg#icon-logo"></use></svg
+        ><svg class="header-logo-text">
+          <use href="/src//images/icons.svg#icon-bookshelf-logo"></use>
+        </svg>
       </a>
       <ul class="header-list">
-        <li><a href="/">HOME</a></li>
-        <li>
-          <a href="/src/shopping.html"
-            >SHOPPING LIST
-            <svg width="20px" height="20px">
-              <use href="/src/images/icons.svg#icon-bag-shop"></use>
-            </svg>
-          </a>
+        <li class="header-yellow-hover"><a href="/">HOME</a></li>
+        <li class="header-shopping-list-wrapper header-yellow-hover">
+          <a href="/src/shopping.html">SHOPPING LIST</a>
+          <svg width="20px" height="20px">
+            <use href="/src/images/icons.svg#icon-bag-shop"></use>
+          </svg>
         </li>
       </ul>
     </nav>
-    <div class="btns-header-wrapper">
-      <label class="switch">
+    <div class="header-btns-wrapper">
+      <label class="header-switch">
         <input type="checkbox" checked />
-        <span class="slider round"></span>
+        <span class="header-slider"></span>
       </label>
-      <button type="button" id="sign-button" class="log-in">
+      <button type="button" id="header-sign-button" class="header-log-in">
         Sign up<svg width="20px" height="20px">
           <use href="/src/images/icons.svg#icon-arrow-narrow-right"></use>
         </svg>
       </button>
-      <button type="button" class="hamburger">
+      <button type="button" id="toggleBtn" class="header-hamburger" aria-expanded="false">
         <svg width="28px" height="28px">
           <use href="/src/images/icons.svg#icon-align-left"></use>
         </svg>
       </button>
     </div>
+  </div>
+  <div class="menu-container" id="mobileMenu" class="header-menu-open">
+    <ul class="header-list">
+      <li class="header-yellow-hover"><a href="/">HOME</a></li>
+      <li class="header-shopping-list-wrapper header-yellow-hover">
+        <a href="/src/shopping.html">SHOPPING LIST</a>
+        <svg width="20px" height="20px">
+          <use href="/src/images/icons.svg#icon-bag-shop"></use>
+        </svg>
+      </li>
+    </ul>
+    <button type="button" class="header-hamburger" id="closeMenuBtn">
+      <svg width="28px" height="28px">
+        <use href="/src/images/icons.svg#icon-x-close"></use>
+      </svg>
+    </button>
   </div>
 </header>

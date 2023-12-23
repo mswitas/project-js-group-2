@@ -1,8 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const navList = document.querySelector('.header-list');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const toggleBtn = document.getElementById('toggleBtn');
+  const closeMenuBtn = document.getElementById('closeMenuBtn');
 
-  hamburgerBtn.addEventListener('click', function () {
-    navList.classList.toggle('show');
+  toggleBtn.addEventListener('click', function () {
+    mobileMenu.classList.toggle('header-menu-open');
+    const isMenuOpen = mobileMenu.classList.contains('header-menu-open');
+    toggleBtn.setAttribute('aria-expanded', String(isMenuOpen));
+  });
+  closeMenuBtn.addEventListener('click', function () {
+    mobileMenu.classList.remove('header-menu-open');
+    toggleBtn.setAttribute('aria-expanded', 'false');
   });
 });
