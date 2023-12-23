@@ -59,15 +59,28 @@
         flex-direction: row;
         width: 335px;
         height: 170px;
+        padding: 14px;
+
+        border-radius: 16px;
+        border: 2px solid rgba(79, 46, 232, 0.4);
+        background: #fff;
 
         img.SL-book-cover {
           width: 100px;
           height: 142px;
+          margin-right: 14px;
+        }
+
+        button.SL-remove {
+          position: absolute;
         }
         div {
           display: flex;
           flex-direction: column;
           position: relative;
+          width: 193px;
+
+          //   flex-wrap: wrap;
 
           h3.SL-book-title {
             font-size: 16px;
@@ -75,6 +88,8 @@
             line-height: 18px; /* 112.5% */
             letter-spacing: -0.64px;
             text-transform: uppercase;
+
+            margin-bottom: 4px;
           }
           p.SL-book-category {
             color: #b4afaf;
@@ -82,6 +97,8 @@
             font-weight: 400;
             line-height: 14px; /* 116.667% */
             letter-spacing: 0.36px;
+
+            margin-bottom: 8px;
           }
           p.SL-book-description {
             overflow: hidden;
@@ -91,8 +108,11 @@
             font-weight: 400;
             line-height: 18px; /* 128.571% */
             letter-spacing: -0.56px;
+
+            height: 70px;
           }
           div {
+            margin-top: auto;
             flex-direction: row;
             justify-content: space-between;
             p.SL-book-author {
@@ -105,6 +125,14 @@
             }
             div {
               gap: 8px;
+              :first-child {
+                width: 32px;
+                height: 11px;
+              }
+              :last-child {
+                width: 16px;
+                height: 16px;
+              }
             }
           }
         }
