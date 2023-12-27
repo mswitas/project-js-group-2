@@ -1,37 +1,69 @@
 <header>
-  <div class="container flex">
-    <nav class="nav-wrapper">
-      <a href="" class="logo">
-        <svg class="logo-icon"><use href="/src/images/icons.svg#icon-logo"></use></svg
-        ><svg class="logo-text"><use href="/src//images/icons.svg#icon-bookshelf-logo"></use></svg>
+  <div class="container header-flex header-padding">
+    <nav class="header-nav-wrapper">
+      <a href="/" class="header-logo">
+        <svg class="header-logo-icon"><use href="/src/images/icons.svg#icon-logo"></use></svg
+        ><svg class="header-logo-text">
+          <use href="/src//images/icons.svg#icon-bookshelf-logo"></use>
+        </svg>
       </a>
       <ul class="header-list">
-        <li><a href="">HOME</a></li>
-        <li>
-          <a href="#"
-            >SHOPPING LIST
-            <svg width="20px" height="20px">
-              <use href="/src/images/icons.svg#icon-bag-shop"></use>
-            </svg>
-          </a>
+        <li class="header-yellow-hover"><a href="/">HOME</a></li>
+        <li class="header-shopping-list-wrapper header-yellow-hover">
+          <a href="/src/shopping.html">SHOPPING LIST</a>
+          <svg width="20px" height="20px">
+            <use href="/src/images/icons.svg#icon-bag-shop"></use>
+          </svg>
         </li>
       </ul>
     </nav>
-    <div class="btns-header-wrapper">
-      <label class="switch">
+    <div class="header-btns-wrapper">
+      <label class="header-switch">
         <input type="checkbox" checked />
-        <span class="slider round"></span>
+        <span class="header-slider"></span>
       </label>
-      <button type="button" id="sign-button" class="log-in">
+      <button type="button" id="header-sign-button" class="header-log-in">
         Sign up<svg width="20px" height="20px">
           <use href="/src/images/icons.svg#icon-arrow-narrow-right"></use>
         </svg>
       </button>
-      <button type="button" class="hamburger">
+      <button type="button" id="toggleBtn" class="header-hamburger" aria-expanded="false">
         <svg width="28px" height="28px">
           <use href="/src/images/icons.svg#icon-align-left"></use>
         </svg>
       </button>
+  </div>
+  <div class="menu-container" id="mobileMenu" class="header-menu-open">
+    <div class="menuMobile-wrapper">
+    <button type="button" id="header-menuMobile-sign-button" class="header-log-in">
+      Sign up<svg width="20px" height="20px">
+        <use href="/src/images/icons.svg#icon-arrow-narrow-right"></use>
+      </svg>
+    </button>
+    <ul class="header-list-mobileMenu">
+      <li class="header-mobileMenu-yellow-hover"><a href="/">HOME</a></li>
+      <li class="header-shopping-list-wrapper header-mobileMenu-yellow-hover">
+        <a href="/src/shopping.html">SHOPPING LIST</a>
+        <svg width="20px" height="20px">
+          <use href="/src/images/icons.svg#icon-bag-shop"></use>
+        </svg>
+      </li>
+    </ul>
+    <ul class="header-books-wrapper header-grid-container" >
+      <li class="header-book">Book 1</li>
+      <li class="header-book">Book 2</li>
+      <li class="header-book">Book 3</li>
+      <li class="header-book">Book 4</li>
+      <li class="header-book">Book 5</li>
+      <li class="header-book">Book 1</li>
+      <li class="header-book">Book 2</li>
+      <li class="header-book">Book 3</li>
+      <li class="header-book">Book 4</li>
+      <li class="header-book">Book 5</li>
+      <li class="header-book">Book 5</li>
+      <li class="header-book">Book 5</li>
+      
+    </ul>
     </div>
   </div>
 </header>
