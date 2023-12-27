@@ -41,6 +41,7 @@
   justify-content: center;
   gap: 20px;
   margin-right: 136px;
+  width: 100%;
 }
 
 .supportUkraineNumber {
@@ -53,8 +54,7 @@
 }
 
 .numberedItem {
-  display: flex;
-  align-items: center;
+  align-items: center !important;
 }
 
 .numberedItem img {

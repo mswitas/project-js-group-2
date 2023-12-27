@@ -6,18 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
     numberedItems[i].style.display = 'none';
   }
   for (let i = 0; i < 6; i++) {
-    numberedItems[i].style.display = 'block';
+    numberedItems[i].style.display = 'flex';
   }
   button.addEventListener('click', function () {
     if (numberedItems[0].style.display !== 'none') {
       for (let i = 0; i < 3; i++) {
         numberedItems[i].style.display = 'none';
-        numberedItems[i + 6].style.display = 'block';
+        numberedItems[i + 6].style.display = 'flex';
       }
       button.querySelector('svg').style.transform = 'rotate(180deg)';
     } else {
       for (let i = 0; i < 6; i++) {
-        numberedItems[i].style.display = 'block';
+        numberedItems[i].style.display = 'flex';
         numberedItems[i + 6].style.display = 'none';
       }
 
