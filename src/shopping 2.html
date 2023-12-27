@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <include src="./partials/header.html"></include>
+
+    <h2>Shopping <span>List</span></h2>
+    <div id="placeholder">
+        <p>This page is empty, add some books and proceed to order.</p>
+        <img src="/src/images/book-shopping-list.png" alt="falling books">
+    </div>
+    <div id="SL-items">
+        <ul>
+            <li class="SL-book">
+                <img src="https://placehold.jp/100x142.png" alt="placeholder" class="SL-book-cover">
+                <div>
+                    <h3 class="SL-book-title">tytuł</h3>
+                    <p class="SL-book-category">kategoria</p>
+                    <p class="SL-book-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+                        modi
+                        quos
+                        exercitationem, facilis inventore vel repellendus nesciunt libero? Et eum, deleniti veritatis
+                        illum
+                        aliquid dolorem soluta repudiandae id pariatur non.</p>
+                    <div>
+                        <p class="SL-book-author">autor autor</p>
+                        <div>
+                            <a href=""><img src="./images/amazon.png" alt="amazon link"></a>
+                            <a href=""><img src="./images/book-orange.png" alt="księgarnia link"></a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button">
+                    <svg class="SL-remove" width="32" height="32">
+                        <!-- <use href="/icons.svg#icon-trash-03"></use> -->
+                    </svg>
+                </button>
+            </li>
+        </ul>
+
+        <div id="SL-pages">
+            <button type="burtton" id="SL-pages-first">first</button>
+            <button type="burtton" id="SL-pages-previous">previous</button>
+            <button type="burtton" id="SL-pages-actual">actual</button>
+            <button type="burtton" id="SL-pages-after">after</button>
+            <button type="burtton" id="SL-pages-chose">chose</button>
+            <button type="burtton" id="SL-pages-next">next</button>
+            <button type="burtton" id="SL-pages-last">last</button>
+        </div>
+    </div>
+</body>
+
+</html>
