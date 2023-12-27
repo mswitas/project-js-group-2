@@ -9,6 +9,11 @@ export const insertCategoryList = () => {
                 categoryList.push(value.list_name);
             });
             console.log(categoryList);
+            const elementList = document.querySelector('.bookshelf-categories-list');
+            categoryList.map(category => {
+                const listItem = `<li class="categories-list">${category}</li>`;
+                elementList.insertAdjacentHTML('beforeend', listItem);
+            });
         })
         .catch(error => {
             errorHandle(error);
