@@ -19,7 +19,7 @@ body{
 }
 
 .container{
-    max-width: 428px;
+    max-width: 766px;
 }
 
 .ukraine-logo {
@@ -27,10 +27,12 @@ body{
 }
 @media screen and (min-width: 767px) {
     .container{
-            max-width: 768px;
+            max-width: 1199px;
     }
 }
-@media screen and (min-width: 1200px) {
-
-.container {
-    max-width: 1392px;}}
+@media screen and (min-width: 1200px){
+    .container{
+        min-width: 1200px;
+    }
+    
+}
