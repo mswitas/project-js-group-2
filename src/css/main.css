@@ -1,16 +1,19 @@
 @import url(./header.css);
 
 :root{
-    --background-light:#fff;
-    --background-dark: #202024;
-    --purple-accent-color: #4F2EE8;
-    --yellow-accent-color: #EAC645;
+    --background-color:#fff;
+    --text-accent-color: #4F2EE8;
     --grey-text-color: #B4AFAF;
     --black-text-color: #111111;
     --dark-page-login-text: #F6F6F6;
-    --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);    
-
+    --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
 }
+
+html[data-theme="dark"] {
+    --background-color: #202024;
+    --text-accent-color: #EAC645;   
+}
+
 body{
     font-family: 'DM Sans'; 
     font-style: normal;

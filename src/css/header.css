@@ -2,7 +2,7 @@ header {
 display: block;    height: 64px;
     border-radius: 0px 0px 8px 8px;
     border: 1.5px solid #111;
-    background: #fff;
+    background: var(--background-color);
     margin: auto;
     padding: 18px 20px;
 }
@@ -50,14 +50,14 @@ ul{
     border: none;
 }
 
-.switch {
+.theme-switch {
     position: relative;
     display: inline-block;
     width: 40px;
     height: 24px;
 }
 
-.switch input {
+.theme-switch input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -82,14 +82,14 @@ ul{
     width: 18px;
     height: 18px;
     bottom: 2px;
-    background-color: var(--background-light);
+    background-color: var(--background-color);
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 50%;
 }
 
 input:checked+.slider {
-    background-color: var(--purple-accent-color);
+    background-color: var(--text-accent-color);
 }
 
 input:checked+.slider:before {
@@ -117,8 +117,8 @@ input:checked+.slider:before {
     height: 48px;
     border-radius: 18px;
     border: 1.5px solid var(--black-text-color);
-    background: var(--purple-accent-color);
-    color: var(--background-light);
+    background: var(--text-accent-color);
+    color: var(--background-color);
     gap: 90px;
     color: #fff;
     font-size: 14px;
