@@ -1,18 +1,16 @@
-const gallery = document.querySelector('.gallery');
-
-export function createGallery(hits) {
-  hits.forEach(hit => {
-    gallery.insertAdjacentHTML(
+export function createBook(data) {
+  const shoppingListUl = document.querySelector('#SL-list');
+  data.forEach(book => {
+    shoppingListUl.insertAdjacentHTML(
       'beforeend',
       ` <li class="SL-book">
-                        <img src="https://placehold.jp/100x142.png" alt="placeholder" class="SL-book-cover">
+                        <img src="${book.cover}" alt="placeholder" class="SL-book-cover">
                         <div class="SL-d1">
-                            <h3 class="SL-book-title">tytuł</h3>
-                            <p class="SL-book-category">kategoria</p>
-                            <p class="SL-book-description"> Lorem ipsum dolor sit amet consectetur adipisicing eli ab
-                                enim, numquam fugiat maiores tenetur aliquam rerum vitae placeat minus!</p>
+                            <h3 class="SL-book-title">${book.title}</h3>
+                            <p class="SL-book-category">${book.category}</p>
+                            <p class="SL-book-description">${book.description}</p>
                             <div class="SL-d2">
-                                <p class="SL-book-author">autor autor</p>
+                                <p class="SL-book-author">${book.author}</p>
                                 <div class="SL-d3">
                                     <a href=""><img src="./images/amazon.png" alt="amazon link"></a>
                                     <a href=""><img src="./images/book-orange.png" alt="księgarnia link"></a>
