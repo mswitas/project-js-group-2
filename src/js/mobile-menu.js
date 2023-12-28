@@ -18,7 +18,7 @@
   };
 
   toggleBtn.addEventListener('click', toggleMenu);
-  closeBtn.addEventListener('click', toggleMenu);
+  // closeBtn.addEventListener('click', toggleMenu);
 
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
