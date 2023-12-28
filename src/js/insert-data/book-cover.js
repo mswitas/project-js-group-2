@@ -3,10 +3,10 @@ import { errorHandle } from './error-handle';
 
 const bookContainer = document.querySelector('.book-cover-container');
 
-export const insertBook = bookId => {
+export const insertBookCover = bookId => {
   fetchBookById(bookId)
     .then(response => {
-      const book = JSON.parse(response.data);
+      const book = response.data;
       const markup = `<img
         src="${book.book_image}"
         alt="Book cover"
@@ -16,7 +16,7 @@ export const insertBook = bookId => {
         <p class="book-cover-text-overlay">quick view</p>
       </div>
       <p class="book-cover-book-title">${book.title}</p>
-      <p class="book-cover-author">${book.author}</p>`;
+      <p>autor: ${book.author}</p>`;
       bookContainer.insertAdjacentHTML('beforeend', markup);
     })
     .catch(error => {
