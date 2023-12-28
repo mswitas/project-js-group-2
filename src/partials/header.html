@@ -17,6 +17,7 @@
         </li>
       </ul>
     </nav>
+    <div class="header-margin">
     <div class="header-btns-wrapper">
       <label class="header-switch">
         <input type="checkbox" checked />
@@ -28,10 +29,14 @@
         </svg>
       </button>
       <button type="button" id="toggleBtn" class="header-hamburger" aria-expanded="false">
-        <svg width="28px" height="28px">
+        <svg width="28px" height="28px" class="header-open">
           <use href="/src/images/icons.svg#icon-align-left"></use>
         </svg>
+        <svg width="28px" height="28px" class="header-close hidden">
+          <use href="/src/images/icons.svg#icon-x-close"></use>
+        </svg>
       </button>
+  </div>
   </div>
   <div class="menu-container" id="mobileMenu" class="header-menu-open">
     <div class="menuMobile-wrapper">
