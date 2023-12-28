@@ -14,7 +14,7 @@
   };
 
   toggleBtn.addEventListener('click', toggleMenu);
- main
+
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('header-menu-open');
