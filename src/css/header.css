@@ -7,7 +7,9 @@ header {
   margin: auto;
   padding: 18px 20px;
 }
-
+.header-margin{
+  margin-left:auto;
+}
 .header-flex a {
   text-decoration: none;
   color: #111;
@@ -137,7 +139,9 @@ input:checked + .header-slider:before {
   display: flex;
   flex-direction: column;
 }
-
+.hidden {
+  display: none;
+}
 #mobileMenu {
   display: none;
   position: absolute;
@@ -177,6 +181,7 @@ input:checked + .header-slider:before {
   padding-left: 0;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 157px;
 }
 .header-mobileMenu-yellow-hover:hover {
   border-radius: 36px;
@@ -225,8 +230,7 @@ input:checked + .header-slider:before {
   margin: 0 0 32px;
   padding: 0;
   list-style-type: none;
-  padding-top: 157px;
-    overflow: visible;
+  overflow: visible;
 }
 .header-grid-container {
   display: grid;
@@ -243,7 +247,7 @@ input:checked + .header-slider:before {
   border-radius: 8px;
   background: url('https: //books-backend.p.goit.global/books/top-books'),
     lightgray 50% / cover no-repeat;
-    overflow: hidden;
+  overflow: hidden;
 }
 @media screen and (min-width: 767px) {
   .header-list {
