@@ -1,9 +1,14 @@
+$layout-breakpoint-small: 768px;
+$layout-breakpoint-medium: 1440px;
+
 #sidebar {
-  background-color: lightblue;
+  // background-color: lightblue;
   width: 356px;
   display: flex;
   flex-direction: column;
-
+  @media (max-width: $layout-breakpoint-medium) {
+    flex-direction: row;
+  }
   ul {
     list-style: none;
     padding: 0;

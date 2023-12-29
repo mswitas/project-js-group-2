@@ -1,8 +1,11 @@
+$layout-breakpoint-small: 768px;
+$layout-breakpoint-medium: 1440px;
 #main_section {
-  
+  @media (max-width: $layout-breakpoint-medium) {
+    width: 704px;
+  }
   h1 {
     margin: 0 0 40px 0;
-    background-color: lightgray;
   }
 
   flex-shrink: 0;
@@ -12,7 +15,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    background-color: lightgray;
+    // background-color: lightgray;
 
     button {
       all: unset;
@@ -57,11 +60,94 @@
       gap: 1rem;
       margin-bottom: 32px;
 
-      li {
-        border: 1px solid black;
+      li.book {
         width: 180px;
-        height: 306px;
-        background-color: lightgreen;
+        background-color: var(--background-light);
+        margin: 0 auto;
+        z-index: 300;
+        overflow: hidden;
+        position: relative;
+
+        @media (max-width: $layout-breakpoint-medium) {
+          width: 218px;
+          &:nth-child(4),
+          &:nth-child(5) {
+            display: none;
+          }
+        }
+
+        &:hover .book_cover_box_overlay {
+          transform: translateY(-50%);
+        }
+
+        img.book_cover {
+          width: 100%;
+          height: 256px;
+          object-position: 50% 50%;
+          display: block;
+          border-radius: 8px;
+          z-index: 1;
+          margin-bottom: 14px;
+          position: relative;
+          object-fit: cover;
+
+          @media (max-width: $layout-breakpoint-medium) {
+            height: 316px;
+          }
+        }
+
+        h3.book_cover_book_title {
+          min-height: 36px;
+          margin: 0;
+          margin-bottom: 4px;
+          color: var(--black-text-color);
+          font-family: 'DM Sans';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: -0.64px;
+          text-transform: uppercase;
+        }
+        h4.book_cover_book_subtitle {
+          color: var(--grey-text-color);
+          font-family: 'DM Sans';
+          font-size: 12px;
+          font-style: italic;
+          font-weight: 400;
+          line-height: 14px;
+          /* 116.667% */
+          letter-spacing: -0.48px;
+        }
+        .book_cover_box_overlay {
+          width: 100%;
+          height: 70px;
+          border-radius: 0px 0px 8px 8px;
+          background: var(--yellow-accent-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 0;
+          bottom: 31px;
+          z-index: 2;
+          transform: translateY(1500%);
+          transition-property: transform;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .book_cover_text_overlay {
+          color: var(--black-text-color);
+          font-family: 'DM Sans';
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 18px;
+          /* 128.571% */
+          letter-spacing: -0.56px;
+          text-transform: uppercase;
+        }
       }
     }
   }

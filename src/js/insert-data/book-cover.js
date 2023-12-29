@@ -1,7 +1,7 @@
 import { fetchBookById } from '../fetch-from-api/fetch-book';
 import { errorHandle } from './error-handle';
 
-const bookContainer = document.querySelector('.book-cover-container');
+const bookContainer = document.querySelector('.book');
 
 export const insertBookCover = bookId => {
   fetchBookById(bookId)
@@ -10,12 +10,12 @@ export const insertBookCover = bookId => {
       const markup = `<img
         src="${book.book_image}"
         alt="Book cover"
-        class="book-cover"
+        class="book_cover"
       />
-      <div class="book-cover-box-overlay">
-        <p class="book-cover-text-overlay">quick view</p>
+      <div class="book_cover_box_overlay">
+        <p class="book_cover_text_overlay">quick view</p>
       </div>
-      <p class="book-cover-book-title">${book.title}</p>
+      <h3 class="book_cover_book_title">${book.title}</h3>
       <p>autor: ${book.author}</p>`;
       bookContainer.insertAdjacentHTML('beforeend', markup);
     })
