@@ -1,6 +1,7 @@
 import { fetchFromApi } from "../fetch-from-api/fetch-from-api"
 import { errorHandle } from "./error-handle";
 import { getBookMarkup } from "./get-book-markup";
+import { insertCategory } from "./insert-category";
 
 export const insertTopBooks = () => {
     fetchFromApi('top-books')
@@ -14,16 +15,20 @@ export const insertTopBooks = () => {
                     <div class="books_row_container">
                         <h2 class="books_row_title">${category.list_name}</h2>
                         <ul class="books_row" id="books_row_${index}"></ul>
-                        <button class="see_more">See more</button>
+                        <button type="button" class="see_more" id="see_more_${index}">See more</button>
                     </div>
                 `;
                 displayElement.insertAdjacentHTML('beforeend', categoryDiv);
                 const bookList = document.querySelector(`#books_row_${index}`);
-                let listItmes = '';
+                let listItems = '';
                 category.books.map(book => {
-                    listItmes += getBookMarkup(book.book_image, book.title, book.author);
+                    listItems += `<li>${getBookMarkup(book.book_image, book.title, book.author)}</li>`;
                 });
-                bookList.insertAdjacentHTML('afterbegin', listItmes);
+                bookList.insertAdjacentHTML('afterbegin', listItems);
+                const buttonSeeMore = document.querySelector(`#see_more_${index}`);
+                buttonSeeMore.addEventListener('click', () => {
+                    insertCategory(category.list_name);
+                });
             });
         })
         .catch(error => {
