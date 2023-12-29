@@ -4,7 +4,8 @@ import { insertCategory } from './js/insert-data/insert-category';
 import { insertBook } from './js/insert-data/insert-book';
 import './css/scss/main.scss';
 import './js/mobile-menu';
+
 insertCategoryList();
 insertTopBooks();
-insertCategory('Young Adult Paperback Monthly');
-insertBook('643282b1e85766588626a08b');
+//insertCategory('Young Adult Paperback Monthly');
+//insertBook('643282b1e85766588626a08b');
