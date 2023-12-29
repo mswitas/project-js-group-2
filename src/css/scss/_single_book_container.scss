@@ -1,0 +1,110 @@
+.book-cover-container {
+    width: 335px;
+    height: 535px;
+    background-color: var(--background-light);
+    margin: 0 auto;
+    z-index: 300;
+    overflow: hidden;
+    position: relative;
+    margin-top: 18px;
+}
+
+.book-cover {
+    width: 335px;
+    height: 485px;
+    border-radius: 8px;
+    /* background: url(https://s3-alpha-sig.figma.com/img/bcdd/9698/361559ee7d7fce4549c619570a6820ca?Expires=1704067200&Signature=fC8so5HfNXkzNrI54Wh11dWJ3N18QUWBnKpkv7RWOCEdzHpKTJII90e-g5R78ohutHd5q-JtPAb4sEcqxk6bsip3J7iwvCFQijebwV1stpWHspZGzpv1fNRYlJ4Jb8ofcpQDld8GAQaQ0~~vfWDzgELWe8-JM3prg8gGkS1ZXEpHzPG42tgboVeNinCFsEryqkzfEKK2Xq~IzZJ0Nm1Ct45mdDSDOv~jzx3QVMncV~FPZW2OoCF8Heke7HVQGEKbdsUFYUqT1CHKKhuBBTa0PFG1OkM3mZg-Yz616cas9ZZRXQ1NoFeQmAHSYgukuQtdSSYO66TJtBGbz2HE610WEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4),
+      lightgray -4.635px -16px / 102.522% 106.839% no-repeat; */
+    z-index: 1;
+}
+
+.book-cover-book-title {
+    color: var(--black-text-color);
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+    margin-top: 14px;
+}
+
+.book-cover-author {
+    color: var(--grey-text-color);
+    font-family: 'DM Sans';
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 14px;
+    /* 116.667% */
+    letter-spacing: -0.48px;
+}
+
+.book-cover-box-overlay {
+    width: 335px;
+    height: 70px;
+    border-radius: 0px 0px 8px 8px;
+    background: var(--yellow-accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    bottom: 110;
+    z-index: 2;
+    transform: translateY(1500%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.book-cover-text-overlay {
+    color: var(--black-text-color);
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+}
+
+.book-cover-container:hover .book-cover-box-overlay {
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 767px) {
+    .book-cover-container {
+        width: 218px;
+        height: 366px;
+    }
+
+    .book-cover {
+        width: 218px;
+        height: 316px;
+    }
+
+    .book-cover-box-overlay {
+        width: 218px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .book-cover-container {
+        width: 180px;
+        height: 306px;
+    }
+
+    .book-cover {
+        width: 180px;
+        height: 256px;
+    }
+
+    .book-cover-box-overlay {
+        width: 218px;
+    }
+}
