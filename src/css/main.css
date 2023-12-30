@@ -16,19 +16,15 @@
     margin: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'DM Sans';
     font-style: normal;
     font-size: 16px;
-    color: var(--black-text-color);
+    /* color: var(--black-text-color); */
 }
 
 .container {
-    max-width: 766px;
+    max-width: 428px;
 }
 
 .purple-font {
@@ -41,13 +37,12 @@ body {
 
 @media screen and (min-width: 767px) {
     .container {
-        max-width: 1199px;
+        max-width: 768px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        min-width: 1200px;
+        max-width: 1158px;
     }
-
 }
