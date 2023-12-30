@@ -11,6 +11,10 @@
   --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
 }
 
+html[data-theme="dark"] {
+  --background-dark: #202024;
+}
+
 body {
   font-family: 'DM Sans';
   font-style: normal;
