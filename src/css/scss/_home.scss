@@ -9,6 +9,17 @@ $layout-breakpoint-medium: 1440px;
   padding: 40px 24px;
   background: #f6f6f6;
 
+  a#up_button {
+    display: none;
+    @media (max-width: $layout-breakpoint-small) {
+      display: block;
+      position: fixed;
+      bottom: 140px;
+      right: 20px;
+      z-index: 999;
+    }
+  }
+
   @media (max-width: $layout-breakpoint-medium) {
     flex-wrap: wrap;
   }

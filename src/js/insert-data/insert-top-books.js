@@ -14,7 +14,7 @@ export const insertTopBooks = () => {
             if (!displayElement) { console.error('Main section not found'); return; }
 
             // Add page header for Bestseller books and insert it at the beginning
-            const pageHeader = '<h1>Best Seller Books</h1>';
+            const pageHeader = '<h1>Best Seller <span class="purple-font">Books</span></h1>';
             displayElement.insertAdjacentHTML('afterbegin', pageHeader);
 
             // Create rows of 'books'for each category
