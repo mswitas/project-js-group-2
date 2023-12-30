@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky install",
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-js-group-2/"
+    "build": "parcel build src/index.html  --public-url /project-js-group-2/"
   },
   "repository": {
     "type": "git",
