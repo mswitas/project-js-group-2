@@ -1,14 +1,14 @@
 @import url(./header.css);
 
-:root{
-    --background-light:#fff;
+:root {
+    --background-light: #fff;
     --background-dark: #202024;
     --purple-accent-color: #4F2EE8;
     --yellow-accent-color: #EAC645;
     --grey-text-color: #B4AFAF;
     --black-text-color: #111111;
     --dark-page-login-text: #F6F6F6;
-    --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);    
+    --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
 
 }
 
@@ -16,28 +16,37 @@
     margin: 0;
 }
 
-body{
-    font-family: 'DM Sans'; 
-    font-style: normal;
-    font-size: 16px;
-    color: var(--black-text-color);
+html[data-theme="dark"] {
+  --background-dark: #202024;
 }
 
-.container{
-    max-width: 766px;
+body {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 16px;
+    /* color: var(--black-text-color); */
+}
+
+.container {
+    max-width: 428px;
+}
+
+.purple-font {
+    color: var(--purple-accent-color);
 }
 
 .ukraine-logo {
     filter: brightness(0) invert(1);
 }
+
 @media screen and (min-width: 767px) {
-    .container{
-            max-width: 1199px;
+    .container {
+        max-width: 768px;
     }
 }
-@media screen and (min-width: 1200px){
-    .container{
-        min-width: 1200px;
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
     }
-    
 }

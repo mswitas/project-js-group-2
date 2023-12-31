@@ -12,8 +12,11 @@ export const insertCategoryList = () => {
             console.log(categoryList);
             categoryList.sort();
             const elementList = document.querySelector('.bookshelf-categories-list');
+            elementList?.insertAdjacentHTML("afterbegin", `<li class="categories-list"><a href="#">All Cateogories</a></li>`)
             categoryList.map((category, index) => {
-                const listItem = `<li class="categories-list"><a href="#" id="category-${index}">${category}</a></li>`;
+                const listItem = `
+                <li class="categories-list"><a href="#" id="category-${index}">${category}</a></li>
+                `;
                 elementList.insertAdjacentHTML('beforeend', listItem);
                 const link = document.querySelector(`#category-${index}`);
                 link.addEventListener('click', (event) => {

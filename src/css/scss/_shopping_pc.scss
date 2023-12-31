@@ -1,0 +1,22 @@
+@media screen and (min-width: 1200px) {
+  #SL-container {
+    margin: 40px 24px;
+    justify-content: left;
+    gap: 40px;
+  }
+
+  #SL-support {
+    display: flex;
+  }
+  #SL-list {
+    li.SL-book {
+      width: 996px;
+
+      .SL-d1 {
+        width: 808px;
+      }
+    }
+  }
+
+  //   koniec
+}
