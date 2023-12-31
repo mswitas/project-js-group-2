@@ -7,8 +7,18 @@ export const insertCategory = category => {
         .then(response => {
             console.log(response.data);
             const displayElement = document.querySelector('#main_section');
+            const categoryArray = category.split(' ');
+            const lastWordIndex = categoryArray.length - 1;
+            let categoryHeader = '';
+            categoryArray.map((word, index) => {
+                if (index === lastWordIndex) {
+                    categoryHeader += `<span class="purple-font">${word}</span>`;
+                } else {
+                    categoryHeader += `${word} `;
+                }
+            });
             displayElement.innerHTML = `
-                <h1>${category}</h1>
+                <h1>${categoryHeader}</h1>
                 <ul class="books_by_category" id="books_by_category"></ul>
             `;
             const bookList = document.querySelector('#books_by_category');
