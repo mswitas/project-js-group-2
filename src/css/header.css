@@ -157,7 +157,7 @@ input:checked+.header-slider:before {
   height: 100%;
   background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 999;
   transition: transform 0.3s ease-in-out;
 }
 
