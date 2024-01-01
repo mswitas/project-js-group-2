@@ -83,6 +83,7 @@
     }
 
     button.SL-remove {
+      cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -94,10 +95,14 @@
       background-color: #4f2ee8;
       border-radius: 100000px;
       border: none;
+      // background-image: url('/src/images/icons.svg#icon-trash-03');
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position: center;
+
       svg {
-        width: 16px;
-        height: 16px;
-        fill: #4f2ee8;
+        width: 100%;
+        // z-index: -1;
       }
     }
     .SL-d1 {
@@ -177,6 +182,8 @@
   margin-top: 20px;
 
   .SL-ring {
+    cursor: pointer;
+
     width: 38px;
     height: 38px;
     border-color: #000;
