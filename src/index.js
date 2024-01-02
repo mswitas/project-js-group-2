@@ -5,6 +5,7 @@ import { insertBook } from './js/insert-data/insert-book';
 import './css/scss/main.scss';
 import './js/mobile-menu';
 import './js/theme-switcher';
+import './js/login-modal';
 
 insertCategoryList();
 insertTopBooks();
