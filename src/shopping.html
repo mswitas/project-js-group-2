@@ -23,14 +23,20 @@
         </div>
 
         <div id="SL-flex">
-            <h2 id="SL-title">Shopping <span id="SL-title-span">List</span></h2>
-
+            <div style="display: flex; flex-direction: row; gap: 50px;">
+                <h2 id="SL-title">Shopping <span id="SL-title-span">List</span></h2>
+                <button type="button" id="SL-add">Add test books</button>
+                <button type="button" id="SL-buy">Buy books / Remove from shopping list</button>
+            </div>
             <div id="SL-placeholder">
                 <p>This page is empty, add some books and proceed to order.</p>
                 <img src="/src/images/book-shopping-list.png" alt="falling books">
             </div>
 
             <ul id="SL-list">
+
+                <!-- testowa książka
+
                 <li class="SL-book">
                     <img src="https://placehold.jp/100x142.png" alt="placeholder" class="SL-book-cover">
                     <div class="SL-d1">
@@ -51,7 +57,7 @@
                             <use href="./images/icons.svg#icon-trash-03"></use>
                         </svg>
                     </button>
-                </li>
+                </li> -->
 
             </ul>
 
@@ -75,7 +81,9 @@
 
 
     <!-- <script src="./index.js" type="module"></script> -->
-    <script src="./js/shopping-list/test-adding.js" type="module"></script>
+    <script src="./js/shopping-list/shopping.js" type="module"></script>
+    <script src="/src/js/supportukraine.js"></script>
+
 
 </body>
 
