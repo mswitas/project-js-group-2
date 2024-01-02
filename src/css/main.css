@@ -17,12 +17,8 @@
     margin: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 html[data-theme="dark"] {
-    --background-dark: #202024;
+  --background-dark: #202024;
 }
 
 body {
