@@ -19,12 +19,14 @@ export const insertCategory = category => {
             });
             displayElement.innerHTML = `
                 <h1>${categoryHeader}</h1>
-                <ul class="books_by_category" id="books_by_category"></ul>
+                <div class="books_by_category">
+                    <ul class="books_category_list" id="books_by_category"></ul>
+                </div>
             `;
             const bookList = document.querySelector('#books_by_category');
             let listItems = '';
             response.data.map(book => {
-                listItems += `<li>${getBookMarkup(book.book_image, book.title, book.author)}</li>`;
+                listItems += `<li class="book">${getBookMarkup(book.book_image, book.title, book.author)}</li>`;
             });
             bookList.insertAdjacentHTML('afterbegin', listItems);
         })
