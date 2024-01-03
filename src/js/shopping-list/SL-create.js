@@ -1,6 +1,6 @@
 import bookOrange from '../../images/book-orange.png';
 import amazon from '../../images/amazon.png';
-// import trashIcon from '../../icons.svg#icon-trash-03';
+import trashIcon from '../../images/trash-03.svg';
 
 export function createBook(book) {
   const shoppingListUl = document.querySelector('#SL-list');
@@ -27,7 +27,7 @@ export function createBook(book) {
                         </div class="SL-d1">
                         <button value='${book._id}' type="button" class="SL-remove">
                             <svg>
-                                <use href=></use>
+                                <use href=${trashIcon}></use>
                             </svg>
                         </button>
                     </li>`,
