@@ -30,13 +30,13 @@ $layout-breakpoint-medium: 1440px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            align-items: flex-start;
             list-style-type: none;
             gap: 1rem;
             margin-bottom: 32px;
 
             li.book {
                 width: 180px;
-                flex-grow: 1;
                 margin: 0 auto;
                 z-index: 300;
                 overflow: hidden;
@@ -44,23 +44,11 @@ $layout-breakpoint-medium: 1440px;
 
                 @media (max-width: $layout-breakpoint-medium) {
                     width: 218px;
-
-                    &:nth-child(4),
-                    &:nth-child(5) {
-                        display: none;
-                    }
                 }
 
                 @media (max-width: $layout-breakpoint-small) {
                     width: 100%;
                     max-width: 335px;
-
-                    &:nth-child(2),
-                    &:nth-child(3),
-                    &:nth-child(4),
-                    &:nth-child(5) {
-                        display: none;
-                    }
                 }
 
                 &:hover .book_cover_box_overlay {
