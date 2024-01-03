@@ -23,7 +23,7 @@
 
 #SL-title {
   align-self: flex-start;
-  color: #111;
+  color: var(--black-text-color);
   padding-bottom: 40px;
 
   font-size: 32px;
@@ -95,7 +95,7 @@
       right: 14;
       width: 28px;
       height: 28px;
-      background-color: #4f2ee8;
+      background-color: var(--purple-accent-color);
       border-radius: 100000px;
       border: none;
       // background-image: url('/src/images/icons.svg#icon-trash-03');
@@ -119,7 +119,7 @@
       width: 193px;
 
       h3.SL-book-title {
-        color: #111;
+        color: var(--black-text-color);
         font-size: 16px;
         font-weight: 700;
         line-height: 18px; /* 112.5% */
@@ -129,7 +129,7 @@
         margin-bottom: 4px;
       }
       p.SL-book-category {
-        color: #b4afaf;
+        color: var(--grey-text-color);
         font-size: 12px;
         font-weight: 400;
         line-height: 14px; /* 116.667% */
@@ -155,7 +155,7 @@
         align-items: end;
 
         p.SL-book-author {
-          color: #b4afaf;
+          color: var(--grey-text-color);
           font-size: 12px;
           font-style: italic;
           font-weight: 400;
@@ -209,15 +209,15 @@
   }
 
   #SL-pages-first {
-    color: #b4afaf;
+    color: var(--grey-text-colo);
     background: #111;
   }
   #SL-pages-previous {
-    color: #b4afaf;
+    color: var(--grey-text-colo);
     background: #111;
   }
   #SL-pages-actual {
-    color: #fff;
+    color: var(--background-light);
     background: #111;
   }
   #SL-pages-after {
@@ -225,9 +225,16 @@
   #SL-pages-chose {
   }
   #SL-pages-next {
-    background: #eac645;
+    background: var(--yellow-accent-color);
   }
   #SL-pages-last {
-    background: #eac645;
+    background: var(--yellow-accent-color);
   }
+}
+
+#SL-add,
+#SL-buy {
+  display: flex;
+  height: max-content;
+  flex-shrink: 1;
 }
