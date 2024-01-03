@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./login-modal.css);
+@import url(./supportUkraine.css);
 
 :root {
     /* --background-main: #fff; */
@@ -21,9 +22,9 @@
 }
 
 html[data-theme="dark"] {
-  --background-main: #202024;
-  --text-main: #fff;
-  --hoover-color-main: #EAC645;
+    --background-main: #202024;
+    --text-main: #fff;
+    --hoover-color-main: #EAC645;
 
 }
 
