@@ -7,6 +7,7 @@ import './css/scss/main.scss';
 import './js/mobile-menu';
 import './js/theme-switcher';
 import './js/login-modal';
+import { getTest } from './js/insert-data/insert-test';
 
 insertCategoryList();
 insertTopBooks();
