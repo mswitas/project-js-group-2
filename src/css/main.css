@@ -2,6 +2,9 @@
 @import url(./login-modal.css);
 
 :root {
+    /* --background-main: #fff; */
+    /* --text-main: #111111; */
+    /* --hoover-color-main: #4F2EE8; */
     --background-light: #fff;
     --background-dark: #202024;
     --purple-accent-color: #4F2EE8;
@@ -18,7 +21,10 @@
 }
 
 html[data-theme="dark"] {
-  --background-dark: #202024;
+  --background-main: #202024;
+  --text-main: #fff;
+  --hoover-color-main: #EAC645;
+
 }
 
 body {
@@ -46,7 +52,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1441px) {
     .container {
         max-width: 1158px;
     }
