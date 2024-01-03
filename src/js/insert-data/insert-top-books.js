@@ -18,7 +18,7 @@ export const insertTopBooks = () => {
             displayElement.insertAdjacentHTML('afterbegin', pageHeader);
 
             // Create rows of 'books'for each category
-            response.data.map((category, index) => {
+            response.data.forEach((category, index) => {
 
                 // type Category = {
                 //      books: book[],
