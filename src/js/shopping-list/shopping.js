@@ -8,7 +8,6 @@ const pagesButtons = document.querySelector('#SL-pages');
 const listRemove = document.querySelector('#SL-list');
 const buy = document.querySelector('#SL-buy');
 const add = document.querySelector('#SL-add');
-
 // testowe dodawanie książek
 add.addEventListener('click', function () {
   addBookIdToShoppingList('643282b1e85766588626a0dc');

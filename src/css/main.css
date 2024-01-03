@@ -14,7 +14,8 @@
     --black-text-color: #111111;
     --dark-page-login-text: #F6F6F6;
     --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
-
+    --amazon-color: grayscale(1);
+    --sl-placeholder: rgba(0, 0, 0, 0.60);
 }
 
 * {
@@ -25,6 +26,8 @@ html[data-theme="dark"] {
     --background-main: #202024;
     --text-main: #fff;
     --hoover-color-main: #EAC645;
+    --amazon-color: grayscale(1) brightness(1000%);
+    --sl-placeholder: rgba(255, 255, 255, 0.60);
 
 }
 
