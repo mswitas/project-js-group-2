@@ -2,6 +2,7 @@ $layout-breakpoint-small: 768px;
 $layout-breakpoint-medium: 1440px;
 
 #sidebar {
+
   /* width */
   ::-webkit-scrollbar {
     width: 8px;
@@ -26,6 +27,7 @@ $layout-breakpoint-medium: 1440px;
   width: 356px;
   display: flex;
   flex-direction: column;
+
   @media (max-width: $layout-breakpoint-medium) {
     flex-direction: row;
     width: 768px;
@@ -34,6 +36,7 @@ $layout-breakpoint-medium: 1440px;
     margin-bottom: 98px;
     justify-content: center;
   }
+
   @media (max-width: $layout-breakpoint-small) {
     height: auto;
     align-items: center;
@@ -48,6 +51,7 @@ $layout-breakpoint-medium: 1440px;
 
   #menu-categories {
     margin-bottom: 86px;
+
     @media (max-width: $layout-breakpoint-medium) {
       margin: 0;
       overflow: auto;
@@ -65,20 +69,24 @@ $layout-breakpoint-medium: 1440px;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 18px; /* 112.5% */
+      line-height: 18px;
+      /* 112.5% */
       letter-spacing: -0.32px;
     }
+
     h3,
     li {
       margin-bottom: 2rem;
     }
   }
+
   ul.bookshelf-categories-list {
     font-family: DM Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 112.5% */
+    line-height: 18px;
+    /* 112.5% */
     letter-spacing: -0.32px;
     height: 472px;
     overflow-y: scroll;
@@ -91,6 +99,7 @@ $layout-breakpoint-medium: 1440px;
       a {
         text-decoration: none;
         color: rgba(17, 17, 17, 0.6);
+
         // transition: all 0.2s linear;
         &:hover {
           text-transform: uppercase;
@@ -106,11 +115,9 @@ $layout-breakpoint-medium: 1440px;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: radial-gradient(
-      189.32% 190.93% at 59.76% -23.42%,
-      var(--purple-accent-color) 18.03%,
-      #fff 100%
-    );
+    background: radial-gradient(189.32% 190.93% at 59.76% -23.42%,
+        var(--purple-accent-color) 18.03%,
+        #fff 100%);
     box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.1);
     border-radius: 16px;
     padding-left: 40px;
@@ -168,7 +175,6 @@ $layout-breakpoint-medium: 1440px;
   .supportUkraineButton {
     width: 32px;
     height: 32px;
-    fill: var(--background-light);
     border-radius: 50%;
     border: 0px;
     display: flex;
@@ -182,16 +188,12 @@ $layout-breakpoint-medium: 1440px;
     left: 50%;
   }
 
-  .supportUkraineButton:active {
-    transform: scale(0.9);
+  .rotated {
+    transform: rotate(180deg);
   }
 
-  .supportUkrainearrow {
-    fill: var(--purple-accent-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+
 
   /*style dla tabletu */
   @media screen and (min-width: 768px) and (max-width: 1024px) {
