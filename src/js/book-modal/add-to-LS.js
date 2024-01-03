@@ -13,5 +13,5 @@ addToListBtn.addEventListener('click', e => {
   note.classList.add('modal-book-note');
   modalBookContainer.style.height = '806px';
   addToListBtn.style.margin = '44px 62px 8px 62px';
-  addToListBtniner.after(note);
+  addToListBtn.after(note);
 });
