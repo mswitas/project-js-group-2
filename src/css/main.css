@@ -31,7 +31,8 @@ html[data-theme="dark"] {
     --background-home: #202024;
     --text-main: #fff;
     --hoover-color-main: #EAC645;
-
+    --amazon-color: grayscale(1) brightness(1000);
+    --sl-placeholder: (255, 255, 255, 0.60);
 }
 
 body {
