@@ -6,27 +6,26 @@ import { removeBookIdFromShoppingList } from './remove-book-id-from-shopping-lis
 
 const pagesButtons = document.querySelector('#SL-pages');
 const listRemove = document.querySelector('#SL-list');
-const buy = document.querySelector('#SL-buy');
-const add = document.querySelector('#SL-add');
+// const buy = document.querySelector('#SL-buy');
+// const add = document.querySelector('#SL-add');
+// // testowe dodawanie książek
+// add.addEventListener('click', function () {
+//   addBookIdToShoppingList('643282b1e85766588626a0dc');
+//   addBookIdToShoppingList('643282b1e85766588626a0b6');
+//   addBookIdToShoppingList('643282b2e85766588626a112');
+//   addBookIdToShoppingList('643282b1e85766588626a0b4');
+//   addBookIdToShoppingList('643282b1e85766588626a07a');
+//   addBookIdToShoppingList('643282b2e85766588626a14a');
+//   location.reload();
+// });
 
-// testowe dodawanie książek
-add.addEventListener('click', function () {
-  addBookIdToShoppingList('643282b1e85766588626a0dc');
-  addBookIdToShoppingList('643282b1e85766588626a0b6');
-  addBookIdToShoppingList('643282b2e85766588626a112');
-  addBookIdToShoppingList('643282b1e85766588626a0b4');
-  addBookIdToShoppingList('643282b1e85766588626a07a');
-  addBookIdToShoppingList('643282b2e85766588626a14a');
-  location.reload();
-});
-
-// testowe kasowanie książek
-buy.addEventListener('click', function () {
-  getShoppingList().forEach(book => {
-    removeBookIdFromShoppingList(book);
-    location.reload();
-  });
-});
+// // testowe kasowanie książek
+// buy.addEventListener('click', function () {
+//   getShoppingList().forEach(book => {
+//     removeBookIdFromShoppingList(book);
+//     location.reload();
+//   });
+// });
 
 console.log(getShoppingList());
 

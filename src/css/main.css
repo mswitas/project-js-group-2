@@ -14,6 +14,8 @@
   --black-text-color: #111111;
   --dark-page-login-text: #f6f6f6;
   --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
+  --amazon-color: grayscale(1);
+  --sl-placeholder: rgba(0, 0, 0, 0.6);
   --background-home: #f6f6f6;
   --main-categories-color: rgba(17, 17, 17, 0.6);
   --logo-main: #000;
@@ -29,6 +31,8 @@ html[data-theme='dark'] {
   --background-home: #202024;
   --text-main: #fff;
   --hoover-color-main: #eac645;
+  --amazon-color: grayscale(1) brightness(1000);
+  --sl-placeholder: (255, 255, 255, 0.6);
   --main-categories-color: rgba(255, 255, 255, 0.6);
   --logo-main: #f3f3f3;
   --bgc-modal: #202024;
