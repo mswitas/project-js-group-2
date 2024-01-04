@@ -64,7 +64,7 @@
 .supportUkraineButton {
   width: 32px;
   height: 32px;
-  fill: var(--background-light);
+  fill: var(--background-main);
   border-radius: 50%;
   border: 0px;
   display: flex;
@@ -83,7 +83,7 @@
 }
 
 .supportUkrainearrow {
-  fill: var(--purple-accent-color);
+  fill: var(--hoover-color-main);
   display: flex;
   justify-content: center;
   align-items: center;

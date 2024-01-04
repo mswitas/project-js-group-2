@@ -31,10 +31,11 @@
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
-    "parcel": "^2.10.3",
-    "sass": "^1.69.5",
     "axios": "^1.6.2",
-    "notiflix": "^3.2.6"
+    "basiclightbox": "^5.0.4",
+    "notiflix": "^3.2.6",
+    "parcel": "^2.10.3",
+    "sass": "^1.69.5"
   },
   "targets": {
     "default": {}
