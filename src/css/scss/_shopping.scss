@@ -102,18 +102,11 @@ body {
       background-color: var(--purple-accent-color);
       border-radius: 100000px;
       border: none;
-      // background-image: url('/src/images/icons.svg#icon-trash-03');
-      // background-size: cover;
-      // background-repeat: no-repeat;
-      // background-position: center;
 
       svg {
         width: 100%;
-        // z-index: -1;
+
         use {
-          // width: 100%;
-          // height: 100%;
-          // fill: #000;
         }
       }
     }
