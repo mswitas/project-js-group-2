@@ -50,7 +50,7 @@ body {
   width: 265px;
 
   p {
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sl-placeholder);
     text-align: center;
     font-size: 14px;
     font-weight: 400;
@@ -102,18 +102,11 @@ body {
       background-color: var(--purple-accent-color);
       border-radius: 100000px;
       border: none;
-      // background-image: url('/src/images/icons.svg#icon-trash-03');
-      // background-size: cover;
-      // background-repeat: no-repeat;
-      // background-position: center;
 
       svg {
         width: 100%;
-        // z-index: -1;
+
         use {
-          // width: 100%;
-          // height: 100%;
-          // fill: #000;
         }
       }
     }
@@ -244,6 +237,10 @@ body {
   flex-shrink: 1;
 }
 
-.SL-gray {
+.SL-amazon {
+  filter: var(--amazon-color);
+}
+
+.SL-orange {
   filter: grayscale(1);
 }
