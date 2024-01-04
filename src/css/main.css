@@ -3,64 +3,64 @@
 @import url(./supportUkraine.css);
 
 :root {
-    --background-main: #fff; 
-    --text-main: #111111;
-    --hoover-color-main: #4F2EE8;
-    --background-light: #fff;
-    --background-dark: #202024;
-    --purple-accent-color: #4F2EE8;
-    --yellow-accent-color: #EAC645;
-    --grey-text-color: #B4AFAF;
-    --black-text-color: #111111;
-    --dark-page-login-text: #F6F6F6;
-    --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
-    --background-home: #F6F6F6;
-    --main-categories-color: rgba(17, 17, 17, 0.6);
-    --logo-main: #000;
-
+  --background-main: #fff;
+  --text-main: #111111;
+  --hoover-color-main: #4f2ee8;
+  --background-light: #fff;
+  --background-dark: #202024;
+  --purple-accent-color: #4f2ee8;
+  --yellow-accent-color: #eac645;
+  --grey-text-color: #b4afaf;
+  --black-text-color: #111111;
+  --dark-page-login-text: #f6f6f6;
+  --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
+  --background-home: #f6f6f6;
+  --main-categories-color: rgba(17, 17, 17, 0.6);
+  --logo-main: #000;
+  --bgc-modal: #fff;
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
-html[data-theme="dark"] {
-    --background-main: #111;
-    --background-home: #202024;
-    --text-main: #fff;
-    --hoover-color-main: #EAC645;
-    --main-categories-color:rgba(255, 255, 255, 0.60);
-    --logo-main: #F3F3F3;
-
+html[data-theme='dark'] {
+  --background-main: #111;
+  --background-home: #202024;
+  --text-main: #fff;
+  --hoover-color-main: #eac645;
+  --main-categories-color: rgba(255, 255, 255, 0.6);
+  --logo-main: #f3f3f3;
+  --bgc-modal: #202024;
 }
 
 body {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-size: 16px;
-    /* color: var(--black-text-color); */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  /* color: var(--black-text-color); */
 }
 
 .container {
-    max-width: 428px;
+  max-width: 428px;
 }
 
 .purple-font {
-    color: var(--purple-accent-color);
+  color: var(--purple-accent-color);
 }
 
 .ukraine-logo {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 @media screen and (min-width: 767px) {
-    .container {
-        max-width: 768px;
-    }
+  .container {
+    max-width: 768px;
+  }
 }
 
 @media screen and (min-width: 1441px) {
-    .container {
-        max-width: 1158px;
-    }
+  .container {
+    max-width: 1158px;
+  }
 }
