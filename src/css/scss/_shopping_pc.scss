@@ -1,10 +1,12 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   #SL-container {
     margin: 40px 24px;
     justify-content: left;
     gap: 40px;
   }
-
+  #SL-flex {
+    justify-content: left;
+  }
   #SL-support {
     display: flex;
   }

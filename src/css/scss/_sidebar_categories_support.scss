@@ -91,10 +91,6 @@ $layout-breakpoint-medium: 1440px;
     height: 472px;
     overflow-y: scroll;
 
-    @media (max-width: $layout-breakpoint-small) {
-      height: auto;
-    }
-
     li {
       a {
         text-decoration: none;
@@ -103,7 +99,7 @@ $layout-breakpoint-medium: 1440px;
         // transition: all 0.2s linear;
         &:hover {
           text-transform: uppercase;
-          color: var(--purple-accent-color);
+          color: var(--hoover-color-main);
           font-weight: bold;
         }
       }

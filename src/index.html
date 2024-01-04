@@ -10,8 +10,9 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=DM Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=DM%20Sans" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/src/css/supportUkraine.css" />
   </head>
 
   <body>
@@ -19,9 +20,11 @@
     <include src="./partials/header.html"></include>
     <include src="./partials/home.html"></include>
     <include src="./partials/login-modal.html"></include>
+    <include src="./partials/book-modal.html"></include>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
-    <script src="/src/js/supportukraine.js"></script>
+
+    <script src="/src/js/supportukraine.js" type="module"></script>
   </body>
 </html>

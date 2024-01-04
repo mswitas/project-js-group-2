@@ -1,16 +1,16 @@
 <header>
-  <div class="container header-flex header-padding">
+  <div class="header-flex header-padding">
     <nav class="header-nav-wrapper">
-      <a href="/" class="header-logo">
+      <a href="index.html" class="header-logo">
         <svg class="header-logo-icon"><use href="/src/images/icons.svg#icon-logo"></use></svg
         ><svg class="header-logo-text">
           <use href="/src//images/icons.svg#icon-bookshelf-logo"></use>
         </svg>
       </a>
       <ul class="header-list">
-        <li class="header-yellow-hover"><a href="/">HOME</a></li>
+        <li class="header-yellow-hover"><a href="index.html">HOME</a></li>
         <li class="header-shopping-list-wrapper header-yellow-hover">
-          <a href="/src/shopping.html">SHOPPING LIST</a>
+          <a href="shopping.html">SHOPPING LIST</a>
           <svg width="20px" height="20px">
             <use href="/src/images/icons.svg#icon-bag-shop"></use>
           </svg>
@@ -22,7 +22,7 @@
       <div class="theme-switch-wrapper">
         <label class="theme-switch header-switch" for="checkbox">
           <input type="checkbox" id="checkbox" />
-          <div class="header-slider slider round"></div>
+          <span class="header-slider slider round"></span>
         </label>
       </div>
       <button type="button" id="header-sign-button" class="header-log-in" data-modal-open>
@@ -40,36 +40,29 @@
       </button>
   </div>
   </div>
-  <div class="menu-container" id="mobileMenu" class="header-menu-open">
+  <div class="menu-container" id="mobileMenu" >
     <div class="menuMobile-wrapper">
     <button type="button" id="header-menuMobile-sign-button" class="header-log-in" data-modal-open="">
       Sign up<svg width="20px" height="20px">
         <use href="/src/images/icons.svg#icon-arrow-narrow-right"></use>
       </svg>
     </button>
-    <ul class="header-list-mobileMenu">
-      <li class="header-mobileMenu-yellow-hover"><a href="/">HOME</a></li>
-      <li class="header-shopping-list-wrapper header-mobileMenu-yellow-hover">
-        <a href="/src/shopping.html">SHOPPING LIST</a>
-        <svg width="20px" height="20px">
-          <use href="/src/images/icons.svg#icon-bag-shop"></use>
-        </svg>
-      </li>
-    </ul>
-    <ul class="header-books-wrapper header-grid-container" >
-      <li class="header-book" data-book-id="1">Book 1</li>
-      <li class="header-book">Book 2</li>
-      <li class="header-book">Book 3</li>
-      <li class="header-book">Book 4</li>
-      <li class="header-book">Book 5</li>
-      <li class="header-book">Book 1</li>
-      <li class="header-book">Book 2</li>
-      <li class="header-book">Book 3</li>
-      <li class="header-book">Book 4</li>
-      <li class="header-book">Book 5</li>
-      <li class="header-book">Book 5</li>
-      <li class="header-book">Book 5</li>  
-    </ul>
+        <button type="button" id="header-log-out"> Log out<svg width="20px" height="20px">
+            <use href="/src/images/icons.svg#icon-arrow-narrow-right"></use>
+          </svg></button>
+    </div>
+    <div class="header-books-container">
+      <ul class="header-list-mobileMenu">
+        <li class="header-mobileMenu-yellow-hover"><a href="/">HOME</a></li>
+        <li class="header-shopping-list-wrapper header-mobileMenu-yellow-hover">
+          <a href="/src/shopping.html">SHOPPING LIST</a>
+          <svg width="20px" height="20px">
+            <use href="/src/images/icons.svg#icon-bag-shop-menu"></use>
+          </svg>
+        </li>
+      </ul>
+      <ul class="header-books-wrapper header-grid-container">
+      </ul>
     </div>
   </div>
 </header>
