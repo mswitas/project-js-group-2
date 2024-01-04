@@ -2,6 +2,7 @@ import { fetchFromApi } from "../fetch-from-api/fetch-from-api"
 import { errorHandle } from "./error-handle";
 import { getBookMarkup } from "./get-book-markup";
 import { insertCategory } from "./insert-category";
+import { openBookModal } from "../book-modal/open-book-modal";
 
 export const insertTopBooks = () => {
     fetchFromApi('top-books')
@@ -47,11 +48,18 @@ export const insertTopBooks = () => {
 
                 // Create list element for every book in category
                 category.books.forEach(book => {
-                    listItems += `<li class="book">${getBookMarkup(book.book_image, book.title, book.author)}</li>`;
+                    listItems += `<li class="book" id="bookId-${book._id}">${getBookMarkup(book.book_image, book.title, book.author)}</li>`;
                 });
 
                 // Insert list of books into
                 bookList.insertAdjacentHTML('afterbegin', listItems);
+
+                category.books.forEach(book => {
+                    const bookElement = document.querySelector(`#bookId-${book._id}`);
+                    bookElement.addEventListener('click', () => {
+                        openBookModal(book._id);
+                    });
+                });
 
                 // Find show more button and handle null
                 const buttonSeeMore = document.querySelector(`#see_more_${index}`);
@@ -61,6 +69,8 @@ export const insertTopBooks = () => {
                 buttonSeeMore.addEventListener('click', () => {
                     insertCategory(category.list_name);
                 });
+
+
             });
         })
         .catch(error => {
