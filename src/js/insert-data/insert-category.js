@@ -1,3 +1,4 @@
+import { openBookModal } from "../book-modal/open-book-modal";
 import { fetchCategory } from "../fetch-from-api/fetch-category"
 import { errorHandle } from "./error-handle";
 import { getBookMarkup } from "./get-book-markup";
@@ -27,9 +28,15 @@ export const insertCategory = category => {
             const bookList = document.querySelector('#books_by_category');
             let listItems = '';
             response.data.forEach(book => {
-                listItems += `<li class="book">${getBookMarkup(book.book_image, book.title, book.author)}</li>`;
+                listItems += `<li class="book" id="bookId-${book._id}">${getBookMarkup(book.book_image, book.title, book.author)}</li>`;
             });
             bookList.insertAdjacentHTML('afterbegin', listItems);
+            response.data.forEach(book => {
+                const bookElement = document.querySelector(`#bookId-${book._id}`);
+                bookElement.addEventListener('click', () => {
+                    openBookModal(book._id);
+                });
+            });
         })
         .catch(error => {
             errorHandle(error);
