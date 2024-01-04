@@ -2,6 +2,7 @@ $layout-breakpoint-small: 768px;
 $layout-breakpoint-medium: 1440px;
 
 #sidebar {
+
   /* width */
   ::-webkit-scrollbar {
     width: 8px;
@@ -26,6 +27,7 @@ $layout-breakpoint-medium: 1440px;
   width: 356px;
   display: flex;
   flex-direction: column;
+
   @media (max-width: $layout-breakpoint-medium) {
     flex-direction: row;
     width: 768px;
@@ -34,6 +36,7 @@ $layout-breakpoint-medium: 1440px;
     margin-bottom: 98px;
     justify-content: center;
   }
+
   @media (max-width: $layout-breakpoint-small) {
     height: auto;
     align-items: center;
@@ -48,6 +51,7 @@ $layout-breakpoint-medium: 1440px;
 
   #menu-categories {
     margin-bottom: 86px;
+
     @media (max-width: $layout-breakpoint-medium) {
       margin: 0;
       overflow: auto;
@@ -65,20 +69,24 @@ $layout-breakpoint-medium: 1440px;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 18px; /* 112.5% */
+      line-height: 18px;
+      /* 112.5% */
       letter-spacing: -0.32px;
     }
+
     h3,
     li {
       margin-bottom: 2rem;
     }
   }
+
   ul.bookshelf-categories-list {
     font-family: DM Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 112.5% */
+    line-height: 18px;
+    /* 112.5% */
     letter-spacing: -0.32px;
     height: 472px;
     overflow-y: scroll;
@@ -86,7 +94,8 @@ $layout-breakpoint-medium: 1440px;
     li {
       a {
         text-decoration: none;
-        color: var(--main-categories-color);
+        color: rgba(17, 17, 17, 0.6);
+
         // transition: all 0.2s linear;
         &:hover {
           text-transform: uppercase;
@@ -97,25 +106,132 @@ $layout-breakpoint-medium: 1440px;
     }
   }
 
-  #ukraine-support {
-    // To be removed
-    height: 474px;
-    max-width: 356px;
-    width: 100%;
-
-    border-radius: 16px;
-    background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
+  .SupportUkraineBody {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: radial-gradient(189.32% 190.93% at 59.76% -23.42%,
+        var(--purple-accent-color) 18.03%,
+        #fff 100%);
     box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.1);
-    padding: 26px 40px;
+    border-radius: 16px;
+    padding-left: 40px;
+    max-width: 335px;
+    width: 100%;
+    max-height: 460px;
+    position: relative;
+  }
 
-    .support-ukraine-title {
-      margin-bottom: 40px;
+  /* style dla mobile */
+  .supportUkraineTitle {
+    color: var(--background-light);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.88px;
+    line-height: 24px;
+    display: flex;
+    gap: 12px;
+    padding: 26px 12px 30px 0px;
+  }
+
+  .numberedList {
+    list-style: none;
+    padding: 0;
+    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .supportUkraineNumber {
+    color: var(--background-light);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    padding-right: 16px;
+  }
+
+  .numberedItem {
+    align-items: center !important;
+  }
+
+  .numberedItem img {
+    margin-left: 16px;
+    max-height: 32px;
+    max-width: 159px;
+    filter: brightness(0) invert(1);
+  }
+
+  .supportUkraineButton {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+  }
+
+  .rotated {
+    transform: rotate(180deg);
+  }
+
+
+
+
+  /*style dla tabletu */
+  @media screen and (min-width: 768px) and (max-width: 1440px) {
+    .SupportUkraineBody {
+      width: 335px;
+      max-height: 474px;
     }
 
-    .support-ukraine-list {
-      li {
-        margin-bottom: 20px;
-      }
+    .supportUkraineTitle {
+      font-size: 24px;
+      letter-spacing: -0.96px;
+      line-height: 28px;
+      padding: 26px 12px 26px 0;
+    }
+
+    .supportUkraineButton {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  /*Style dla komputera*/
+  @media screen and (min-width: 1440px) {
+    .SupportUkraineBody {
+      width: 356px;
+      max-height: 474px;
+    }
+
+    .supportUkraineTitle {
+      font-size: 24px;
+      letter-spacing: -0.96px;
+      line-height: 28px;
+      padding: 26px 12px 26px 0;
+    }
+
+    .numberedList {
+      margin-right: 157px;
+    }
+
+    .supportUkraineButton {
+      width: 38px;
+      height: 38px;
     }
   }
 }
