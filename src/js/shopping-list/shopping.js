@@ -49,9 +49,13 @@ getShoppingList().forEach(book => {
 });
 
 listRemove.addEventListener('click', function (event) {
-  if (event.target.classList.contains('SL-remove')) {
-    console.log(event.target.value);
-    removeBookIdFromShoppingList(event.target.value);
+  const clickedElement = event.target;
+
+  if (clickedElement.classList.contains('SL-remove') || clickedElement.closest('.SL-remove')) {
+    const removeButton = clickedElement.closest('.SL-remove');
+    const bookId = removeButton.value;
+
+    removeBookIdFromShoppingList(bookId);
     location.reload();
   }
 });
