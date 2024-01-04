@@ -36,7 +36,7 @@ body {
   letter-spacing: -1.28px;
 
   span {
-    color: var(--purple-accent-color);
+    color: var(--hoover-color-main);
   }
 }
 
@@ -50,7 +50,7 @@ body {
   width: 265px;
 
   p {
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--main-categories-color);
     text-align: center;
     font-size: 14px;
     font-weight: 400;
@@ -99,7 +99,7 @@ body {
       right: 14;
       width: 28px;
       height: 28px;
-      background-color: var(--purple-accent-color);
+      background-color: var(--hoover-color-main);
       border-radius: 100000px;
       border: none;
       // background-image: url('/src/images/icons.svg#icon-trash-03');
@@ -222,7 +222,7 @@ body {
     background: #111;
   }
   #SL-pages-actual {
-    color: var(--background-light);
+    color: var(--background-main);
     background: #111;
   }
   #SL-pages-after {

@@ -3,9 +3,9 @@
 @import url(./supportUkraine.css);
 
 :root {
-    /* --background-main: #fff; */
-    /* --text-main: #111111; */
-    /* --hoover-color-main: #4F2EE8; */
+    --background-main: #fff; 
+    --text-main: #111111;
+    --hoover-color-main: #4F2EE8;
     --background-light: #fff;
     --background-dark: #202024;
     --purple-accent-color: #4F2EE8;
@@ -14,6 +14,9 @@
     --black-text-color: #111111;
     --dark-page-login-text: #F6F6F6;
     --radial-gradient: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
+    --background-home: #F6F6F6;
+    --main-categories-color: rgba(17, 17, 17, 0.6);
+    --logo-main: #000;
 
 }
 
@@ -22,9 +25,12 @@
 }
 
 html[data-theme="dark"] {
-    --background-main: #202024;
+    --background-main: #111;
+    --background-home: #202024;
     --text-main: #fff;
     --hoover-color-main: #EAC645;
+    --main-categories-color:rgba(255, 255, 255, 0.60);
+    --logo-main: #F3F3F3;
 
 }
 
