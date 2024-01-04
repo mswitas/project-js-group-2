@@ -1,2 +1,2 @@
 document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("supportukrainebutton"),t=document.querySelectorAll(".numberedItem");for(let e=0;e<t.length;e++)t[e].style.display="none";for(let e=0;e<6;e++)t[e].style.display="flex";e.addEventListener("click",function(){if("none"!==t[0].style.display){for(let e=0;e<3;e++)t[e].style.display="none",t[e+6].style.display="flex";e.querySelector("svg").style.transform="rotate(180deg)"}else{for(let e=0;e<6;e++)t[e].style.display="flex",t[e+6].style.display="none";e.querySelector("svg").style.transform=""}e.classList.toggle("reversed")})});
-//# sourceMappingURL=index.75a5190a.js.map
+//# sourceMappingURL=shopping.f49ca155.js.map
