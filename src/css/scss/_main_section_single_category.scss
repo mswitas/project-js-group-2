@@ -80,7 +80,7 @@ $layout-breakpoint-medium: 1440px;
                 min-height: 36px;
                 margin: 0;
                 margin-bottom: 4px;
-                color: var(--black-text-color);
+                color: var(--text-main);
                 font-family: 'DM Sans';
                 font-size: 16px;
                 font-style: normal;
@@ -120,7 +120,7 @@ $layout-breakpoint-medium: 1440px;
             }
 
             .book_cover_text_overlay {
-                color: var(--black-text-color);
+                color: var(--text-main);
                 font-family: 'DM Sans';
                 font-size: 14px;
                 font-style: normal;

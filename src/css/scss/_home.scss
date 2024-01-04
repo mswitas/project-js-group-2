@@ -7,7 +7,7 @@ $layout-breakpoint-medium: 1440px;
   justify-content: center;
   column-gap: 40px;
   padding: 40px 24px;
-  background: #f6f6f6;
+  background: var(--background-home);
 
   a#up_button {
     display: none;
