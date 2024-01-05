@@ -35,7 +35,7 @@ const listRemove = document.querySelector('#SL-list');
 //   });
 // });
 
-console.log(getShoppingList());
+// console.log(getShoppingList());
 
 if (getShoppingList().length > 0) {
   document.getElementById('SL-placeholder').style.display = 'none';
@@ -51,7 +51,7 @@ if (getShoppingList().length > 4) {
 
 getShoppingList().forEach(book => {
   fetchBookById(book).then(response => {
-    console.log(response.data);
+    // console.log(response.data);
     createBook(response.data);
   });
 });
