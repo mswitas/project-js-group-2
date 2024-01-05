@@ -3,7 +3,6 @@ import { loadingInfo } from '../fetch-from-api/loader';
 
 
 export const fetchTopBooksCovers = async () => {
-    loadingInfo();
     const response = await axios('https://books-backend.p.goit.global/books/top-books');
     const allBooks = response.data.flatMap(value => {
         return value.books;
