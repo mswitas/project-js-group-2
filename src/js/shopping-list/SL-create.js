@@ -26,9 +26,7 @@ export function createBook(book) {
                             </div>
                         </div class="SL-d1">
                         <button value='${book._id}' type="button" class="SL-remove">
-                            <svg>
-                                <use href=${trashIcon}></use>
-                            </svg>
+                            <img src="${trashIcon}" alt="trash can"/>
                         </button>
                     </li>`,
   );
