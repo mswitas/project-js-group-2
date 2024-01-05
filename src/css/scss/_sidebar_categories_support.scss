@@ -54,7 +54,7 @@ $layout-breakpoint-medium: 1440px;
 
     @media (max-width: $layout-breakpoint-medium) {
       margin: 0;
-      overflow: auto;
+      //overflow: auto;
     }
 
     @media (max-width: $layout-breakpoint-small) {
@@ -90,6 +90,10 @@ $layout-breakpoint-medium: 1440px;
     letter-spacing: -0.32px;
     height: 472px;
     overflow-y: scroll;
+
+    @media (max-width: $layout-breakpoint-small) { 
+      height: 228px;
+    }
 
     li {
       a {
