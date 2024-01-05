@@ -17,6 +17,7 @@ export const insertTopBooks = () => {
             // Add page header for Bestseller books and insert it at the beginning
             const pageHeader = '<h1>Best Seller <span class="purple-font">Books</span></h1>';
             displayElement.insertAdjacentHTML('afterbegin', pageHeader);
+            displayElement.innerHTML = '';
 
             // Create rows of 'books'for each category
             response.data.forEach((category, index) => {

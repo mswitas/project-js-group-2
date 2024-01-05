@@ -1,6 +1,9 @@
 import axios from "axios"
+import { loadingInfo } from '../fetch-from-api/loader';
+
 
 export const fetchFromApi = async requestType => {
+    loadingInfo();
     let url;
     
     switch (requestType) {

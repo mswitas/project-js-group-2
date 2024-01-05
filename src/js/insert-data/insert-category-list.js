@@ -13,12 +13,12 @@ export const insertCategoryList = () => {
             console.log(categoryList);
             categoryList.sort();
             const elementList = document.querySelector('.bookshelf-categories-list');
-            elementList.insertAdjacentHTML("afterbegin", `<li class="categories-list"><a href="#" id="all-categories">All Cateogories</a></li>`);
+            elementList.insertAdjacentHTML("afterbegin", `<li class="categories-list"><a href="#" id="all-categories">All Categories</a></li>`);
             const allCategoriesLink = document.querySelector('#all-categories');
             allCategoriesLink.addEventListener('click', (event) => {
                 event.preventDefault();
                 const displayElement = document.querySelector('#main_section');
-                displayElement.innerHTML = "";
+                //displayElement.innerHTML = "";
                 insertTopBooks();
             });
             categoryList.map((category, index) => {

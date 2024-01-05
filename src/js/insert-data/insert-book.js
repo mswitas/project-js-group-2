@@ -1,4 +1,4 @@
-import { fetchBookById } from "../fetch-from-api/fetch-book"
+import { fetchBookById } from "../fetch-from-api/fetch-book";
 import { errorHandle } from "./error-handle";
 
 export const insertBook = (bookId, selector) => {
