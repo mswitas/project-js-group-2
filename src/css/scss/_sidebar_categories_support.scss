@@ -94,7 +94,7 @@ $layout-breakpoint-medium: 1440px;
     li {
       a {
         text-decoration: none;
-        color: rgba(17, 17, 17, 0.6);
+        color: var(--main-categories-color);
 
         // transition: all 0.2s linear;
         &:hover {
