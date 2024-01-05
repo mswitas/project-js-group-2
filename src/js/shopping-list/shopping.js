@@ -3,6 +3,14 @@ import { addBookIdToShoppingList } from './add-book-id-to-shopping-list';
 import { getShoppingList } from './get-shopping-list';
 import { fetchBookById } from '../fetch-from-api/fetch-book';
 import { removeBookIdFromShoppingList } from './remove-book-id-from-shopping-list';
+import { getTopBookCovers } from '../insert-data/insert-top-book-covers';
+getTopBookCovers();
+
+import '../../css/scss/main.scss';
+import '../../js/mobile-menu';
+import '../../js/theme-switcher';
+import '../../js/login-modal';
+import '../../js/supportukraine';
 
 const pagesButtons = document.querySelector('#SL-pages');
 const listRemove = document.querySelector('#SL-list');
