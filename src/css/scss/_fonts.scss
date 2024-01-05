@@ -1,9 +1,12 @@
 h1 {
   color:var(--text-main);
   font-family: DM Sans;
-  font-size: 48px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px; /* 108.333% */
   letter-spacing: -1.92px;
+  @media screen and (min-width:768px) {
+    font-size: 48px;
+  }
 }
