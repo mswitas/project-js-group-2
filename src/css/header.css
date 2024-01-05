@@ -14,7 +14,7 @@ header {
 
 .header-flex a {
   text-decoration: none;
-  color:var(--text-main);
+  color: var(--text-main);
 }
 
 header ul {
@@ -87,12 +87,12 @@ header ul {
   transform: translateX(21px);
 }
 
-input:checked + .header-slider {
+input:checked+.header-slider {
   background: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
-input:checked + .header-slider:before {
+input:checked+.header-slider:before {
   transform: translateX(1px);
 }
 
@@ -160,18 +160,21 @@ input:checked + .header-slider:before {
   z-index: 999;
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
+  height: calc(100vh - 64px);
 }
 
 .header-list-mobileMenu a {
   color: var(--background-light);
   text-decoration: none;
 }
-.header-fill-menu-shop-bag{
-  fill:var(--background-light);
+
+.header-fill-menu-shop-bag {
+  fill: var(--background-light);
 
 }
-.header-fill-shop-bag{
-  fill:var(--background-main);
+
+.header-fill-shop-bag {
+  fill: var(--background-main);
 
 }
 
@@ -180,7 +183,7 @@ input:checked + .header-slider:before {
   transform: translateY(0);
 }
 
-#mobileMenu + .header-list {
+#mobileMenu+.header-list {
   position: absolute;
 }
 
@@ -254,10 +257,12 @@ input:checked + .header-slider:before {
   list-style-type: none;
   margin: 0;
 }
+
 .header-books-container {
   overflow: hidden;
   margin: 0;
 }
+
 .header-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -269,6 +274,7 @@ input:checked + .header-slider:before {
   padding-left: 20px;
   padding-top: 30px;
 }
+
 .header-book {
   width: 89px;
   height: auto;
@@ -276,11 +282,13 @@ input:checked + .header-slider:before {
   overflow: hidden;
   margin: 0;
 }
+
 .header-book img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 #header-log-out {
   display: flex;
   justify-content: center;
@@ -297,6 +305,7 @@ input:checked + .header-slider:before {
   font-size: 14px;
   z-index: 999;
 }
+
 @media screen and (min-width: 767px) {
   .header-list {
     display: flex;
