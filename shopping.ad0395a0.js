@@ -1,2 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("supportukrainebutton"),t=document.querySelectorAll(".numberedItem");function n(){let n=e.classList.contains("rotated");for(let e=0;e<t.length;e++)t[e].style.display=n?e>=0&&e<6?"flex":"none":e>=3?"flex":"none"}n(),e.addEventListener("click",function(){e.classList.toggle("rotated"),n()})});
-//# sourceMappingURL=shopping.ad0395a0.js.map
