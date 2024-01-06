@@ -147,7 +147,9 @@ input:checked + .header-slider:before {
 .hidden {
   display: none;
 }
-
+.auto{
+  overflow: auto;
+}
 #mobileMenu {
   display: none;
   position: fixed;
