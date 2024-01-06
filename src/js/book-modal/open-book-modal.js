@@ -30,8 +30,8 @@ export const openBookModal = bookId => {
                     ${book.description}
                     </p>
                     <div class="modal-book-links">
-                    <a href="${amazonLink}" class="modal-book-amazon">  <img src=${amazonImg} alt="Link to amazon"></a>
-                    <a href="${bookstoreLink}" class="modal-book-bookstore"><img src=${bookOrange} alt="Link to bookstore"></a>
+                    <a href="${amazonLink}" class="modal-book-amazon" target="_blank"><img src=${amazonImg} alt="Link to amazon"></a>
+                    <a href="${bookstoreLink}" class="modal-book-bookstore" target="_blank"><img src=${bookOrange} alt="Link to bookstore"></a>
                     </div>
             `;
             bookInfoContainer.insertAdjacentHTML('beforeend', markupInfo);
