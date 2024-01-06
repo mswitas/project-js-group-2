@@ -8,9 +8,9 @@
     mobileMenu.classList.toggle('header-menu-open');
     toggleBtn.setAttribute('aria-expanded', !isMenuOpen);
     if (isMenuOpen) {
-      body.style.overflow = 'hidden';
-    } else {
       body.style.overflow = 'auto';
+    } else {
+      body.style.overflow = 'hidden';
     }
 
     const headerOpenSVG = toggleBtn.querySelector('.header-open');
