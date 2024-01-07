@@ -61,7 +61,7 @@ listRemove.addEventListener('click', function (event) {
 
   if (clickedElement.classList.contains('SL-remove') || clickedElement.closest('.SL-remove')) {
     const removeButton = clickedElement.closest('.SL-remove');
-    const bookId = removeButton.value;
+    const bookId = removeButton.dataset.value;
 
     removeBookIdFromShoppingList(bookId);
     location.reload();
