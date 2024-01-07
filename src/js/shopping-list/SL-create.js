@@ -16,10 +16,10 @@ export function createBook(book) {
                             <div class="SL-d2">
                                 <p class="SL-book-author">${book.author}</p>
                                 <div class="SL-d3">
-                                    <a href="${book.amazon_product_url}">
+                                    <a href="${book.amazon_product_url}" target="_blank">
                                         <img class="SL-amazon" src=${amazon} alt="amazon link">
                                     </a>
-                                    <a href="${book.buy_links[2].url}">
+                                    <a href="${book.buy_links[2].url}" target="_blank">
                                         <img class="SL-orange" src=${bookOrange} alt="księgarnia link">
                                     </a>
                                 </div>
