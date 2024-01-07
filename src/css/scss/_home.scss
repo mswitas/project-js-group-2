@@ -9,17 +9,23 @@ $layout-breakpoint-medium: 1440px;
   padding: 40px 24px;
   background: var(--background-home);
 
-  a#up_button {
+  #up_button {
     display: none;
-    @media (max-width: $layout-breakpoint-small) {
-      display: block;
-      position: fixed;
-      bottom: 140px;
-      right: 20px;
-      z-index: 999;
-    }
+    border: none;
+    background: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    z-index: 999;
+    // }
   }
-
+  #up_button.show {
+    display: block;
+    opacity: 1;
+  }
   @media (max-width: $layout-breakpoint-medium) {
     flex-wrap: wrap;
   }
