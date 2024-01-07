@@ -2,7 +2,6 @@
   const mobileMenu = document.getElementById('mobileMenu');
   const toggleBtn = document.getElementById('toggleBtn');
   const body = document.querySelector('body');
-  const topbtn = document.querySelector('#up_button')
 
   const toggleMenu = () => {
     const isMenuOpen = mobileMenu.classList.contains('header-menu-open');
@@ -10,10 +9,8 @@
     toggleBtn.setAttribute('aria-expanded', !isMenuOpen);
     if (isMenuOpen) {
       body.style.overflow = 'auto';
-      topbtn.style.display = 'block';
     } else {
       body.style.overflow = 'hidden';
-      topbtn.style.display = 'none';;
     }
 
     const headerOpenSVG = toggleBtn.querySelector('.header-open');
