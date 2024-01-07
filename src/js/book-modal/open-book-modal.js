@@ -1,23 +1,23 @@
-import { fetchBookById } from "../fetch-from-api/fetch-book";
-import { errorHandle } from "../insert-data/error-handle";
-import { includesBookIdOnShoppingList } from "../shopping-list/includes-book-id-on-shopping-list";
-import { addBookIdToShoppingList } from "../shopping-list/add-book-id-to-shopping-list";
-import { removeBookIdFromShoppingList } from "../shopping-list/remove-book-id-from-shopping-list";
-import { closeBookModal } from "./close-book-modal";
-import amazonImg from "../../images/amazon.png";
-import bookOrange from "../../images/book-orange.png";
-import { escKeyClose } from "./esc-key-close";
-import { slButtonHandle } from "./sl-button-handle";
+import { fetchBookById } from '../fetch-from-api/fetch-book';
+import { errorHandle } from '../insert-data/error-handle';
+import { includesBookIdOnShoppingList } from '../shopping-list/includes-book-id-on-shopping-list';
+import { addBookIdToShoppingList } from '../shopping-list/add-book-id-to-shopping-list';
+import { removeBookIdFromShoppingList } from '../shopping-list/remove-book-id-from-shopping-list';
+import { closeBookModal } from './close-book-modal';
+import amazonImg from '../../images/amazon.png';
+import bookOrange from '../../images/book-orange.png';
+import { escKeyClose } from './esc-key-close';
+import { slButtonHandle } from './sl-button-handle';
 
 export const openBookModal = bookId => {
-    const bookInfoContainer = document.querySelector('.modal-book-book-info'); 
-    const modalBookContainer = document.querySelector('.modal-book-container');
-    fetchBookById(bookId)
-        .then(response => {
-            const book = response.data;
-            const amazonLink = book.buy_links[0].url;
-            const bookstoreLink = book.buy_links[1].url;
-            const markupInfo = `
+  const bookInfoContainer = document.querySelector('.modal-book-book-info');
+  const modalBookContainer = document.querySelector('.modal-book-container');
+  fetchBookById(bookId)
+    .then(response => {
+      const book = response.data;
+      const amazonLink = book.buy_links[0].url;
+      const bookstoreLink = book.buy_links[1].url;
+      const markupInfo = `
                 <img
                     src="${book.book_image}"
                     alt="Book cover"
@@ -34,38 +34,41 @@ export const openBookModal = bookId => {
                     <a href="${bookstoreLink}" class="modal-book-bookstore" target="_blank"><img src=${bookOrange} alt="Link to bookstore"></a>
                     </div>
             `;
-            bookInfoContainer.insertAdjacentHTML('beforeend', markupInfo);
-            const bookModal = document.querySelector('.modal-book-container-bgc');
-            bookModal.style.display = 'block';
-            
-            const closeButton = document.querySelector('.modal-book-close-icon');    
-            closeButton.addEventListener('click', closeBookModal);
+      bookInfoContainer.insertAdjacentHTML('beforeend', markupInfo);
+      const bookModal = document.querySelector('.modal-book-container-bgc');
+      bookModal.style.display = 'block';
 
-            const addBtnMarkup = `<button type="button" class="modal-book-addtolist-btn" id="slBtn-${bookId}" data-sl="add">add to shopping list</button>`;
-            const removeBtnMarkup = `<button type="button" class="modal-book-addtolist-btn" id="slBtn-${bookId}" data-sl="remove">remove from the shopping list</button>`;
-            const slButtonContainer = document.querySelector('#sl-button-container');
-            let slAdd = true;
-            
+      const closeButton = document.querySelector('.modal-book-close-icon');
+      closeButton.addEventListener('click', closeBookModal);
 
-            if (includesBookIdOnShoppingList(bookId)) {
-                slButtonContainer.innerHTML = removeBtnMarkup;
-            } else {
-                slButtonContainer.innerHTML = addBtnMarkup;
-            }
-            
-            const slButton = document.querySelector('.modal-book-addtolist-btn');
-            slButton.addEventListener('click', slButtonHandle);
+      const addBtnMarkup = `<button type="button" class="modal-book-addtolist-btn" id="slBtn-${bookId}" data-sl="add">add to shopping list</button>`;
+      const removeBtnMarkup = `<button type="button" class="modal-book-addtolist-btn" id="slBtn-${bookId}" data-sl="remove">remove from the shopping list</button>`;
+      const slButtonContainer = document.querySelector('#sl-button-container');
+      let slAdd = true;
 
-            const modalBg = document.querySelector('.modal-book-container-bgc');
-            modalBg.addEventListener('click', (event) => {
-                if (modalBg !== event.target) {
-                    return;
-                }
-                closeBookModal();
-            });
-            document.addEventListener('keydown', escKeyClose);
-        })
-        .catch(error => {
-            errorHandle(error);
-        });
-}
+      const addedInfo = document.getElementById('add-info');
+
+      if (includesBookIdOnShoppingList(bookId)) {
+        slButtonContainer.innerHTML = removeBtnMarkup;
+        addedInfo.style.display = 'block';
+      } else {
+        slButtonContainer.innerHTML = addBtnMarkup;
+        addedInfo.style.display = 'none';
+      }
+
+      const slButton = document.querySelector('.modal-book-addtolist-btn');
+      slButton.addEventListener('click', slButtonHandle);
+
+      const modalBg = document.querySelector('.modal-book-container-bgc');
+      modalBg.addEventListener('click', event => {
+        if (modalBg !== event.target) {
+          return;
+        }
+        closeBookModal();
+      });
+      document.addEventListener('keydown', escKeyClose);
+    })
+    .catch(error => {
+      errorHandle(error);
+    });
+};

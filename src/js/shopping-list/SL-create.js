@@ -25,7 +25,7 @@ export function createBook(book) {
                                 </div>
                             </div>
                         </div class="SL-d1">
-                        <button value='${book._id}' type="button" class="SL-remove">
+                        <button data-value='${book._id}' type="button" class="SL-remove">
                             <img src="${trashIcon}" alt="trash can"/>
                         </button>
                     </li>`,
