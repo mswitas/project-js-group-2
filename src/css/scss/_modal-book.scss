@@ -14,7 +14,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 335px;
-  height: 762px;
+  // height: 762px;
   border-radius: 18px;
   border: 2px solid var(--text-main);
   background: var(--bgc-modal);
@@ -135,7 +135,7 @@
 @media screen and (min-width: 767px) {
   .modal-book-container {
     width: 579px;
-    height: 465px;
+    // height: 465px;
   }
   .modal-book-close-btn {
     top: 24px;
@@ -205,7 +205,7 @@
 @media screen and (min-width: 1200px) {
   .modal-book-container {
     width: 579px;
-    height: 465px;
+    // height: 465px;
   }
   .modal-book-close-btn {
     top: 24px;
@@ -265,4 +265,13 @@
     line-height: 14px;
     letter-spacing: -0.48px;
   }
+}
+#add-info {
+  display: none;
+  color: var(--main-categories-color);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px; /* 120% */
+  letter-spacing: -0.4px;
 }
