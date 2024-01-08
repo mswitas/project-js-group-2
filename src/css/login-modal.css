@@ -34,7 +34,7 @@
 .SI-modal-input {
   display: flex;
   width: 295px;
-  padding: 16px 173px 16px 24px;
+  padding: 16px 20px;
   align-items: center;
   gap: 10px;
   border-radius: 40px;
@@ -90,7 +90,6 @@
 .SI-input-wrapper {
   background-color: #f3f3f3;
   border: none;
-  width: calc(100% - 40px);
 }
 .SI-link-hover:hover a {
   color: var(--hoover-color-main);
